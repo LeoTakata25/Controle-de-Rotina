@@ -1,0 +1,2 @@
+import { defineConfig } from 'vite'; import react from '@vitejs/plugin-react'; import { VitePWA } from 'vite-plugin-pwa';
+export default defineConfig({plugins:[react(),VitePWA({registerType:'autoUpdate',manifest:{name:'Minha Rotina',short_name:'Minha Rotina',description:'Rotina, hábitos, metas e estudos',theme_color:'#111315',background_color:'#111315',display:'standalone',start_url:'/',icons:[]}})]});
