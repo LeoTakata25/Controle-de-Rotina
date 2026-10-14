@@ -117,11 +117,15 @@ export default function StudyCalendar({ materials, tray, blocks, onAdd, onPatch,
                       <strong title={m.title}>{m.title}</strong>
                       <small>{m.track}{s && s.n > 1 ? ` · dia ${s.i} de ${s.n}` : ''}</small>
                       <div className="cal-ctrl">
-                        <button aria-label="Menos 15 minutos" onClick={() => onPatch(b.id, { minutes: Math.max(MIN, b.minutes - STEP) })}><Minus size={11} /></button>
-                        <span>{fmtMin(b.minutes)}</span>
-                        <button aria-label="Mais 15 minutos" onClick={() => onPatch(b.id, { minutes: Math.min(MAX, b.minutes + STEP) })}><Plus size={11} /></button>
-                        <button className="ext" title="Repetir no dia seguinte" onClick={() => onAdd([{ materialId: b.materialId, date: addDays(b.date, 1), minutes: b.minutes }])}>+1 dia</button>
-                        <button aria-label="Remover do calendário" onClick={() => onRemove(b.id)}><X size={11} /></button>
+                        <div className="cal-time">
+                          <button aria-label="Menos 15 minutos" onClick={() => onPatch(b.id, { minutes: Math.max(MIN, b.minutes - STEP) })}><Minus size={11} /></button>
+                          <span>{fmtMin(b.minutes)}</span>
+                          <button aria-label="Mais 15 minutos" onClick={() => onPatch(b.id, { minutes: Math.min(MAX, b.minutes + STEP) })}><Plus size={11} /></button>
+                        </div>
+                        <div className="cal-more">
+                          <button className="ext" title="Repetir no dia seguinte" onClick={() => onAdd([{ materialId: b.materialId, date: addDays(b.date, 1), minutes: b.minutes }])}>+1 dia</button>
+                          <button aria-label="Remover do calendário" onClick={() => onRemove(b.id)}><X size={11} /></button>
+                        </div>
                       </div>
                     </div>
                   );

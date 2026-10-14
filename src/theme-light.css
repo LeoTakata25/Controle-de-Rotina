@@ -1,0 +1,111 @@
+/* Tema claro. Gerado a partir de styles.css (cores do escuro com a luminosidade invertida).
+   Cada regra aqui só sobrescreve cores quando <html data-theme="light">; para ajustar a paleta, edite os valores abaixo. */
+:root[data-theme="light"]{color-scheme:light}
+:root[data-theme="light"]{color:#161819;background:#eef0ef;--panel:#ffffff;--line:#c1c6cb;--muted:#585f64;--green:#48594e}
+:root[data-theme="light"] body{background:#eef0ef}
+:root[data-theme="light"] .sidebar{background:#f7f8f7;border-right:1px solid #c7cbcf}
+:root[data-theme="light"] .mark{background:#222b27;color:#dfe8e4}
+:root[data-theme="light"] .brand b span,:root[data-theme="light"] h1 span{color:#48594e}
+:root[data-theme="light"] .brand small{color:#7c8488}
+:root[data-theme="light"] .navlabel,:root[data-theme="light"] .eyebrow{color:#48594e}
+:root[data-theme="light"] .sidebar nav button{color:#505759}
+:root[data-theme="light"] .sidebar nav button.active{background:#cfd5d3;color:#1b2a1f;box-shadow:inset 2px 0 #4b6453}
+:root[data-theme="light"] .cloud{border:1px solid #b5beb7;background:#dadfdc;color:#37463b}
+:root[data-theme="light"] .cloud small{color:#606c63}
+:root[data-theme="light"] .profile{border-top:1px solid #c7cbcf}
+:root[data-theme="light"] .profile button,:root[data-theme="light"] .close-mobile{color:#4c554f}
+:root[data-theme="light"] .main>header{border-bottom:1px solid #cacfd2;color:#575f63}
+:root[data-theme="light"] .main>header b{color:#1b1f1d}
+:root[data-theme="light"] .primary,:root[data-theme="light"] .secondary{border:1px solid #212e26;background:#212e26;color:#dfe8e3}
+:root[data-theme="light"] .secondary{background:#d6dadd;border-color:#b0b6bb;color:#24282a}
+:root[data-theme="light"] .stat span{color:#545b5d}
+:root[data-theme="light"] .stat small{color:#61696b}
+:root[data-theme="light"] .panelhead p{color:#61686b}
+:root[data-theme="light"] .row{border-top:1px solid #cbcfd3}
+:root[data-theme="light"] .check{border:1px solid #9da5a1;color:#dfe8e3}
+:root[data-theme="light"] .check.checked{background:#48594e;border-color:#48594e}
+:root[data-theme="light"] .rowcopy small{color:#61696b}
+:root[data-theme="light"] .rowcopy a{color:#37473b}
+:root[data-theme="light"] .timer{color:#37473b}
+:root[data-theme="light"] .timer .live{color:#2b5638}
+:root[data-theme="light"] .timer button{border:1px solid #98a69c;background:#212e26;color:#dfe8e3}
+:root[data-theme="light"] .timer button.stop{background:#d7c5c4;color:#35120e;border-color:#b28c89}
+:root[data-theme="light"] .progressrow{color:#3f4743}
+:root[data-theme="light"] .progressrow small{color:#626a66}
+:root[data-theme="light"] .bar{background:#c5ccc7}
+:root[data-theme="light"] .bar i{background:#4a6351}
+:root[data-theme="light"] .goal small{color:#626a66}
+:root[data-theme="light"] .detail{border-top:1px solid #cbcfd3}
+:root[data-theme="light"] .chips button{background:#dadfdc;border:1px solid #c1c9c3;color:#48524b}
+:root[data-theme="light"] .chips button.selected{background:#c6cfca;color:#1b281e;border-color:#99a99d}
+:root[data-theme="light"] .filters input,:root[data-theme="light"] .filters select,:root[data-theme="light"] .dialog input,:root[data-theme="light"] .dialog select,:root[data-theme="light"] .auth input{background:#ffffff;border:1px solid #c0c7c1;color:#222825}
+:root[data-theme="light"] .material .tag{border:1px solid #b0bdb4;background:#d2d9d5;color:#2a3f30}
+:root[data-theme="light"] .foot{border-top:1px solid #cbcfd3;color:#61696b}
+:root[data-theme="light"] .summary span{color:#585f64}
+:root[data-theme="light"] .summary b{color:#161819}
+:root[data-theme="light"] .focus{background:#dbdfdc;border:1px solid #adb9af;color:#374c3c}
+:root[data-theme="light"] .focus h3{color:#161e18}
+:root[data-theme="light"] .focus p{color:#4f5951}
+:root[data-theme="light"] footer{color:#929b96}
+:root[data-theme="light"] .notice{background:#dadfdc;border:1px solid #b5beb7;color:#28372c}
+:root[data-theme="light"] .notice p{color:#59645c}
+:root[data-theme="light"] .backdrop{background:rgba(24,30,27,.45)}
+:root[data-theme="light"] .dialog{background:#ffffff;border:1px solid #b4bbb5}
+:root[data-theme="light"] .dialoghead button{color:#4c554f}
+:root[data-theme="light"] .dialog label,:root[data-theme="light"] .auth label{color:#48524b}
+:root[data-theme="light"] .dialogactions{border-top:1px solid #c9cfcb}
+:root[data-theme="light"] .auth{background:radial-gradient(ellipse at top,#d4ddd7,transparent 45%),#eef0ef}
+:root[data-theme="light"] .link{color:#37473b}
+:root[data-theme="light"] .error{color:#5b221c}
+@media(max-width:760px){
+:root[data-theme="light"] .menu{color:#2f3731}
+}
+:root[data-theme="light"] .row-action.danger,:root[data-theme="light"] .track-mini-action.danger{color:#5e1e18;border-color:#bc938f}
+:root[data-theme="light"] .track-chip-wrap>button:first-child{border:1px solid #bbc1c4;background:#d9dddf;color:#202622}
+:root[data-theme="light"] .track-chip-wrap>button:first-child.selected{background:#c6cfca;border-color:#8c9a8f}
+:root[data-theme="light"] .track-mini-action{border:1px solid #b5bcbe;background:#d9dddf;color:#242c27}
+:root[data-theme="light"] .seg{border:1px solid #b0b6bb}
+:root[data-theme="light"] .seg button{background:#d6dadd;color:#48524b}
+:root[data-theme="light"] .seg button.selected{background:#c6cfca;color:#1b281e;box-shadow:inset 0 -2px #4b6453}
+:root[data-theme="light"] .filters input:focus,:root[data-theme="light"] .filters select:focus,:root[data-theme="light"] .dialog input:focus,:root[data-theme="light"] .dialog select:focus,:root[data-theme="light"] .kb-actions select:focus{outline:1px solid #65806e}
+:root[data-theme="light"] button:focus-visible,:root[data-theme="light"] [draggable="true"]:focus-visible{outline:2px solid #4b6453}
+:root[data-theme="light"] .kb-col{background:#f3f5f4}
+:root[data-theme="light"] .kb-col.over{background:#dee5e1;border-color:#65806e}
+:root[data-theme="light"] .kb-head{border-bottom:1px solid #cbcfd3}
+:root[data-theme="light"] .kb-head h3 span{color:#61696b}
+:root[data-theme="light"] .kb-head small{color:#61696b}
+:root[data-theme="light"] .kb-col.kb-sprint .kb-head{box-shadow:inset 0 2px #4b6453}
+:root[data-theme="light"] .kb-col.kb-doing .kb-head{box-shadow:inset 0 2px #90742d}
+:root[data-theme="light"] .kb-col.kb-done .kb-head{box-shadow:inset 0 2px #95a29a}
+:root[data-theme="light"] .kb-add{border:1px solid #b0b6bb;background:#d6dadd;color:#2f3731}
+:root[data-theme="light"] .kb-empty{border:1px dashed #b9c0c5;color:#61686b}
+:root[data-theme="light"] .kb-card{border:1px solid #bfc5c9}
+:root[data-theme="light"] .kb-card>small{color:#61696b}
+:root[data-theme="light"] .kb-card a{color:#37473b}
+:root[data-theme="light"] .kb-top .grip{color:#939ca0}
+:root[data-theme="light"] .kb-top .tag{border:1px solid #b0bdb4;background:#d2d9d5;color:#2a3f30}
+:root[data-theme="light"] .kb-plan{color:#47564b}
+:root[data-theme="light"] .kb-actions select{background:#ffffff;border:1px solid #c0c7c1;color:#222825}
+:root[data-theme="light"] .cal-total{color:#47564b}
+:root[data-theme="light"] .cal-tray{background:#f3f5f4}
+:root[data-theme="light"] .cal-tray>p{color:#61696b}
+:root[data-theme="light"] .cal-chip{border:1px solid #bfc5c9;border-left:3px solid #95a29a}
+:root[data-theme="light"] .cal-chip.st-sprint,:root[data-theme="light"] .cal-block.st-sprint{border-left-color:#4b6453}
+:root[data-theme="light"] .cal-chip.st-doing,:root[data-theme="light"] .cal-block.st-doing{border-left-color:#90742d}
+:root[data-theme="light"] .cal-chip small,:root[data-theme="light"] .cal-block small{color:#61696b}
+:root[data-theme="light"] .cal-day{background:#f3f5f4}
+:root[data-theme="light"] .cal-day.today{border-color:#85a08d}
+:root[data-theme="light"] .cal-day.over{background:#dee5e1;border-color:#4f705a}
+:root[data-theme="light"] .cal-dayhead{color:#585f64;border-bottom:1px solid #cbcfd3}
+:root[data-theme="light"] .cal-dayhead b{color:#161819}
+:root[data-theme="light"] .cal-day.today .cal-dayhead b{color:#2c5939}
+:root[data-theme="light"] .cal-block{border:1px solid #bfc5c9;border-left:3px solid #95a29a}
+:root[data-theme="light"] .cal-ctrl span{color:#24282a}
+:root[data-theme="light"] .cal-ctrl button{border:1px solid #b0b6bb;background:#d6dadd;color:#2f3731}
+:root[data-theme="light"] .cal-drop{border:1px dashed #c5ccd0;color:#939ca0}
+:root[data-theme="light"] .cal-daytotal{color:#47564b}
+:root[data-theme="light"] .theme-toggle{border:1px solid #b0b6bb;background:#d6dadd;color:#24282a}
+
+/* ajustes finos do tema claro */
+:root[data-theme="light"] .panel,:root[data-theme="light"] .stat,:root[data-theme="light"] .auth-card{box-shadow:0 1px 2px rgba(20,30,25,.06)}
+:root[data-theme="light"] .dialog{box-shadow:0 18px 50px rgba(20,30,25,.25)}
