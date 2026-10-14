@@ -16,6 +16,12 @@ npm run dev
 
 Abra o endereço local mostrado pelo Vite, normalmente `http://localhost:5173`.
 
+## Central de estudos: quadro e calendário
+- **Quadro:** Backlog → Sprint → Em andamento → Finalizado. Arraste os cards (ou use o seletor "Mover para").
+- **Calendário semanal:** arraste um material para um dia, ajuste o tempo com − / +, use "+1 dia" para continuar no dia seguinte ou "Planejar" para espalhar um curso em vários dias (com opção de pular fim de semana).
+- Agendar um item do Backlog o move para o Sprint; iniciar o cronômetro de um item o move para Em andamento.
+- Antes de usar com o Supabase, execute `supabase/migrations/001_study_board.sql` no SQL Editor.
+
 ## Banco Supabase
 O app espera as tabelas `routine_items`, `habits`, `goals`, `study_tracks`, `study_materials` e `activity_time_entries`, com RLS habilitado e políticas para restringir os dados por `user_id = auth.uid()`.
 

@@ -12,3 +12,82 @@
 .track-chip-wrap>button:first-child.selected{background:#303934;border-color:#657368}
 .track-mini-action{border:1px solid #41484a;background:#202426;color:#d3dbd6;padding:5px 7px;cursor:pointer}
 @media(max-width:650px){.row-action{padding:5px 6px;font-size:10px}.row{flex-wrap:wrap}.rowcopy{min-width:100px}}
+
+/* ===== Central de estudos: quadro + calendário ===== */
+.seg{display:flex;border:1px solid #444a4f;flex-shrink:0}
+.seg button{border:0;background:#222629;color:#adb7b0;padding:8px 12px;font-size:11px}
+.seg button.selected{background:#303934;color:#d7e4da;box-shadow:inset 0 -2px #9bb4a3}
+.study-body{padding:0 18px 18px}
+.filters input:focus,.filters select:focus,.dialog input:focus,.dialog select:focus,.kb-actions select:focus{outline:1px solid #7f9a88;outline-offset:0}
+button:focus-visible,[draggable="true"]:focus-visible{outline:2px solid #9bb4a3;outline-offset:2px}
+
+.kb{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start}
+.kb-col{background:#15181a;border:1px solid var(--line);min-height:260px;display:flex;flex-direction:column;min-width:0;transition:background .12s,border-color .12s}
+.kb-col.over{background:#1a211d;border-color:#7f9a88}
+.kb-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding:13px 12px 10px;border-bottom:1px solid #2c3034}
+.kb-head h3{margin:0;font-size:12px}
+.kb-head h3 span{font-weight:500;color:#858e91;margin-left:4px}
+.kb-head small{display:block;margin-top:4px;font-size:10px;color:#858e91}
+.kb-col.kb-sprint .kb-head{box-shadow:inset 0 2px #9bb4a3}
+.kb-col.kb-doing .kb-head{box-shadow:inset 0 2px #d2b66f}
+.kb-col.kb-done .kb-head{box-shadow:inset 0 2px #5d6a62}
+.kb-add{width:26px;height:26px;display:grid;place-items:center;border:1px solid #444a4f;background:#222629;color:#c8d0ca;padding:0;flex-shrink:0}
+.kb-list{display:grid;gap:8px;padding:10px;align-content:start}
+.kb-empty{border:1px dashed #3a4146;color:#7b8488;font-size:10px;text-align:center;padding:16px 8px}
+.kb-card{background:var(--panel);border:1px solid #363c40;padding:10px;display:grid;gap:7px;cursor:grab;min-width:0}
+.kb-card:active{cursor:grabbing}
+.kb-card>small{font-size:10px;color:#858e91;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.kb-card a{color:#b8c8bc;font-size:10px}
+.kb-top{display:flex;align-items:flex-start;gap:6px;min-width:0}
+.kb-top .grip{color:#5f686c;flex-shrink:0;margin-top:1px}
+.kb-top strong{flex:1;font-size:11px;line-height:1.4;min-width:0;overflow-wrap:anywhere}
+.kb-top .tag{font-size:9px;padding:3px 5px;border:1px solid #424f46;background:#262d29;color:#c0d5c6;flex-shrink:0}
+.kb-plan{display:flex;align-items:center;gap:5px;font-size:10px;color:#a9b8ad}
+.kb-card .timer{justify-content:space-between}
+.kb-actions{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.kb-actions select{min-width:0;flex:1;background:#141715;border:1px solid #383f39;color:#d7ddda;padding:6px;font-size:10px}
+
+.cal-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.cal-nav{display:flex;align-items:center;gap:6px}
+.cal-nav strong{margin-left:8px;font-size:12px}
+.cal-total{font-size:11px;color:#a9b8ad}
+.cal-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:12px;align-items:start}
+.cal-tray{background:#15181a;border:1px solid var(--line);padding:12px;display:grid;gap:8px;align-content:start}
+.cal-tray h3{margin:0;font-size:12px}
+.cal-tray>p{margin:0 0 4px;font-size:10px;color:#858e91;line-height:1.5}
+.cal-chip{background:var(--panel);border:1px solid #363c40;border-left:3px solid #5d6a62;padding:9px;display:grid;gap:6px;cursor:grab}
+.cal-chip.st-sprint,.cal-block.st-sprint{border-left-color:#9bb4a3}
+.cal-chip.st-doing,.cal-block.st-doing{border-left-color:#d2b66f}
+.cal-chip strong,.cal-block strong{font-size:11px;line-height:1.35;overflow-wrap:anywhere}
+.cal-chip small,.cal-block small{font-size:10px;color:#858e91}
+.cal-chip .row-action{justify-self:start;display:inline-flex;align-items:center;gap:5px}
+.cal-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.cal-day{background:#15181a;border:1px solid var(--line);min-height:300px;padding:8px;display:flex;flex-direction:column;gap:6px;min-width:0;transition:background .12s,border-color .12s}
+.cal-day.today{border-color:#5f7a67}
+.cal-day.over{background:#1a211d;border-color:#8fb09a}
+.cal-dayhead{display:flex;align-items:baseline;justify-content:space-between;font-size:10px;color:#9ba2a7;padding-bottom:6px;border-bottom:1px solid #2c3034}
+.cal-dayhead b{font:700 15px Manrope,sans-serif;color:#e6e8e9}
+.cal-day.today .cal-dayhead b{color:#a6d3b3}
+.cal-block{background:var(--panel);border:1px solid #363c40;border-left:3px solid #5d6a62;padding:8px;display:grid;gap:4px;cursor:grab;min-width:0}
+.cal-ctrl{display:flex;align-items:center;gap:3px;margin-top:3px;flex-wrap:wrap}
+.cal-ctrl span{font-size:10px;font-variant-numeric:tabular-nums;min-width:38px;text-align:center;color:#d5d9db}
+.cal-ctrl button{border:1px solid #444a4f;background:#222629;color:#c8d0ca;padding:3px 5px;font-size:9px;display:inline-grid;place-items:center}
+.cal-ctrl .ext{margin-left:auto}
+.cal-drop{flex:1;display:grid;place-items:center;border:1px dashed #2f363a;color:#5f686c;font-size:10px;min-height:60px}
+.cal-daytotal{margin-top:auto;font-size:10px;color:#a9b8ad;text-align:right;padding-top:4px}
+.dialog .check-line{display:flex;align-items:center;gap:8px;align-self:end}
+.dialog .check-line input{width:auto;margin:0}
+.dialog .link{padding:0 0 4px}
+.primary:disabled{opacity:.5;cursor:not-allowed}
+
+@media(max-width:1100px){
+  .kb{grid-template-columns:repeat(4,250px);overflow-x:auto;padding-bottom:6px}
+  .cal-layout{grid-template-columns:1fr}
+  .cal-tray{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+  .cal-tray>h3,.cal-tray>p,.cal-tray>.kb-empty{grid-column:1/-1}
+  .cal-week{grid-template-columns:1fr}
+  .cal-day{min-height:0}
+  .cal-drop{min-height:40px}
+}
+@media(max-width:760px){.study-body{padding:0 12px 14px}.seg button{padding:7px 9px}}
+@media(prefers-reduced-motion:reduce){.kb-col,.cal-day{transition:none}}
