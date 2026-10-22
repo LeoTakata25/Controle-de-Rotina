@@ -16,6 +16,13 @@ npm run dev
 
 Abra o endereço local mostrado pelo Vite, normalmente `http://localhost:5173`.
 
+## Academia, Leitura e Casa
+- **Minha rotina → Academia:** monte seus treinos (nome, dias da semana, exercícios), inicie o treino com cronômetro, registre séries (repetições e carga), finalize e acompanhe a semana e o histórico. Também dá para registrar "não fui" e corrigir qualquer dia.
+- **Leitura:** cadastre livros, registre páginas e minutos lidos, use o cronômetro "Ler agora" e veja a sequência de dias lendo.
+- **Casa:** afazeres por dia, com atrasados e próximos dias.
+- **Editar:** todos os itens (rotina, hábitos, metas, trilhas e materiais) abrem o mesmo formulário da criação.
+- Antes de usar com o Supabase, execute `supabase/migrations/002_academia_leitura_casa.sql` no SQL Editor.
+
 ## Central de estudos: quadro e calendário
 - **Quadro:** Backlog → Sprint → Em andamento → Finalizado. Arraste os cards (ou use o seletor "Mover para").
 - **Calendário semanal:** arraste um material para um dia, ajuste o tempo com − / +, use "+1 dia" para continuar no dia seguinte ou "Planejar" para espalhar um curso em vários dias (com opção de pular fim de semana).

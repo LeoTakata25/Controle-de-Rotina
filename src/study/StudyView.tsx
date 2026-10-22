@@ -16,10 +16,10 @@ type Props = {
   totalMinutes: number;
   renderTimer: (id: string, name: string) => ReactNode;
   onNewTrack: () => void;
-  onRenameTrack: (id: string, name: string) => void;
+  onEditTrack: (id: string) => void;
   onRemoveTrack: (id: string) => void;
   onNewMaterial: (status: Status) => void;
-  onRenameMaterial: (id: string, name: string) => void;
+  onEditMaterial: (id: string) => void;
   onRemoveMaterial: (id: string) => void;
   onMove: (id: string, status: Status) => void;
   onAddBlocks: (rows: NewBlock[]) => void;
@@ -59,7 +59,7 @@ export default function StudyView(p: Props) {
               <button className={p.track === t.name ? 'selected' : ''} onClick={() => p.setTrack(t.name)}>
                 {t.name} · {p.materials.filter(m => m.track === t.name).length}
               </button>
-              <button className="track-mini-action" title="Editar trilha" onClick={() => p.onRenameTrack(t.id, t.name)}>✎</button>
+              <button className="track-mini-action" title="Editar trilha" onClick={() => p.onEditTrack(t.id)}>✎</button>
               <button className="track-mini-action danger" title="Excluir trilha" onClick={() => p.onRemoveTrack(t.id)}>×</button>
             </span>
           ))}
@@ -81,7 +81,7 @@ export default function StudyView(p: Props) {
               renderTimer={p.renderTimer}
               onNew={p.onNewMaterial}
               onMove={p.onMove}
-              onRename={p.onRenameMaterial}
+              onEdit={p.onEditMaterial}
               onRemove={p.onRemoveMaterial}
             />
           ) : (

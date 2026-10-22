@@ -11,11 +11,11 @@ type Props = {
   renderTimer: (id: string, name: string) => ReactNode;
   onNew: (status: Status) => void;
   onMove: (id: string, status: Status) => void;
-  onRename: (id: string, current: string) => void;
+  onEdit: (id: string) => void;
   onRemove: (id: string) => void;
 };
 
-export default function StudyBoard({ materials, blocks, renderTimer, onNew, onMove, onRename, onRemove }: Props) {
+export default function StudyBoard({ materials, blocks, renderTimer, onNew, onMove, onEdit, onRemove }: Props) {
   const [over, setOver] = useState<Status | null>(null);
 
   return (
@@ -80,7 +80,7 @@ export default function StudyBoard({ materials, blocks, renderTimer, onNew, onMo
                       <select value={m.status} aria-label="Mover para" onChange={e => onMove(m.id, e.target.value as Status)}>
                         {COLUMNS.map(x => <option key={x.key} value={x.key}>{x.label}</option>)}
                       </select>
-                      <button className="secondary row-action" onClick={() => onRename(m.id, m.title)}>Editar</button>
+                      <button className="secondary row-action" onClick={() => onEdit(m.id)}>Editar</button>
                       <button className="secondary row-action danger" onClick={() => onRemove(m.id)}>Excluir</button>
                     </div>
                   </article>

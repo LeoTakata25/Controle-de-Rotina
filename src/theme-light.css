@@ -105,6 +105,56 @@
 :root[data-theme="light"] .cal-drop{border:1px dashed #c5ccd0;color:#939ca0}
 :root[data-theme="light"] .cal-daytotal{color:#47564b}
 :root[data-theme="light"] .theme-toggle{border:1px solid #b0b6bb;background:#d6dadd;color:#24282a}
+:root[data-theme="light"] .dialog textarea,:root[data-theme="light"] .wk-notes,:root[data-theme="light"] .wk-addex input,:root[data-theme="light"] .wk-set input,:root[data-theme="light"] .hm-quick input,:root[data-theme="light"] .hm-quick select,:root[data-theme="light"] .wk-start select,:root[data-theme="light"] .wk-start input{background:#ffffff;border:1px solid #c0c7c1;color:#222825}
+:root[data-theme="light"] .dialog textarea:focus,:root[data-theme="light"] .wk-notes:focus,:root[data-theme="light"] .wk-addex input:focus,:root[data-theme="light"] .wk-set input:focus,:root[data-theme="light"] .hm-quick input:focus,:root[data-theme="light"] .hm-quick select:focus,:root[data-theme="light"] .wk-start select:focus,:root[data-theme="light"] .wk-start input:focus{outline:1px solid #65806e}
+:root[data-theme="light"] .link.danger{color:#5e1e18}
+:root[data-theme="light"] .empty{color:#61686b;border-top:1px solid #cbcfd3}
+:root[data-theme="light"] .wk-start label{color:#48524b}
+:root[data-theme="light"] .wk-result{background:#f3f5f4}
+:root[data-theme="light"] .wk-result small{color:#61696b}
+:root[data-theme="light"] .wk-dot{border:1px solid #9da5a1;color:#48524b}
+:root[data-theme="light"] .wk-dot.done,:root[data-theme="light"] .wk-result.done .wk-dot{background:#48594e;border-color:#48594e;color:#dfe8e3}
+:root[data-theme="light"] .wk-dot.skipped,:root[data-theme="light"] .wk-result.skipped .wk-dot{background:#d7c5c4;border-color:#b28c89;color:#35120e}
+:root[data-theme="light"] .wk-day{background:#f3f5f4;color:#48524b}
+:root[data-theme="light"] .wk-day b{color:#161819}
+:root[data-theme="light"] .wk-day i{color:#61686b}
+:root[data-theme="light"] .wk-day small{color:#61696b}
+:root[data-theme="light"] .wk-day.today{border-color:#85a08d}
+:root[data-theme="light"] .wk-day.done{background:#dbe4e0;border-color:#99b0a1}
+:root[data-theme="light"] .wk-day.done i{color:#2c5939}
+:root[data-theme="light"] .wk-day.skipped{background:#e2dbdb;border-color:#bca2a0}
+:root[data-theme="light"] .wk-day.skipped i{color:#5e1e18}
+:root[data-theme="light"] .wk-clockrow small{color:#2b5638}
+:root[data-theme="light"] .wk-clock{color:#2b5638}
+:root[data-theme="light"] .wk-prog small{color:#61696b}
+:root[data-theme="light"] .wk-ex{background:#f3f5f4}
+:root[data-theme="light"] .wk-exhead small{color:#61696b}
+:root[data-theme="light"] .wk-exhead button,:root[data-theme="light"] .wk-x,:root[data-theme="light"] .wk-exbtns button{border:1px solid #b0b6bb;background:#d6dadd;color:#2f3731}
+:root[data-theme="light"] .wk-set>span{color:#61696b}
+:root[data-theme="light"] .wk-pick>small{color:#48524b}
+:root[data-theme="light"] .wk-chips button{background:#dadfdc;border:1px solid #c1c9c3;color:#48524b}
+:root[data-theme="light"] .wk-chips button.on{background:#c6cfca;color:#1b281e;border-color:#99a99d;box-shadow:inset 0 -2px #4b6453}
+:root[data-theme="light"] .rd-day{background:#f3f5f4;color:#48524b}
+:root[data-theme="light"] .rd-day i{color:#61686b}
+:root[data-theme="light"] .rd-day small{color:#61696b}
+:root[data-theme="light"] .rd-day.did{background:#dbe4e0;border-color:#99b0a1}
+:root[data-theme="light"] .rd-day.did i{color:#2c5939}
+:root[data-theme="light"] .rd-day.today{border-color:#85a08d}
+:root[data-theme="light"] .rd-card{background:#f3f5f4;border-left:3px solid #95a29a}
+:root[data-theme="light"] .rd-card.st-reading{border-left-color:#4b6453}
+:root[data-theme="light"] .rd-card.st-finished{border-left-color:#90742d}
+:root[data-theme="light"] .rd-top small{color:#61696b}
+:root[data-theme="light"] .rd-top .tag{border:1px solid #b0bdb4;background:#d2d9d5;color:#2a3f30}
+:root[data-theme="light"] .rd-meta{color:#4c5356}
+:root[data-theme="light"] .rd-meta .ok{color:#2b5638}
+:root[data-theme="light"] .rd-notes{color:#61696b}
+:root[data-theme="light"] .rd-history{border-top:1px solid #cbcfd3}
+:root[data-theme="light"] .rd-log{color:#48524b}
+:root[data-theme="light"] .hm-prog small{color:#61696b}
+:root[data-theme="light"] .hm-sec{background:#f3f5f4;border-top:1px solid #cbcfd3;color:#4c5356}
+:root[data-theme="light"] .hm-sec.late{color:#5e1e18}
+:root[data-theme="light"] .hm-sec.ok{color:#2b5638}
+:root[data-theme="light"] .hm-row.is-done .rowcopy strong{color:#61686b}
 
 /* ajustes finos do tema claro */
 :root[data-theme="light"] .panel,:root[data-theme="light"] .stat,:root[data-theme="light"] .auth-card{box-shadow:0 1px 2px rgba(20,30,25,.06)}
